@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/geolocationLayout">
+
+    <!-- res/layout/activity_profile.xml -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBFB"
+        android:fillViewport="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Profile Photo -->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/sampleprofile1pic" />
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Triggered NFC - Spectacles NFC Content"
+                android:textColor="#050505"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <!-- Quote -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="“I am a person who live in the present, cherish the past, and embrace the unknown future throughout my life.”"
+                android:textColor="#434343"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <!-- Picture -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Picture -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tourpic" />
+
+                <!-- Text below the picture -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left|center_vertical"
+                    android:paddingTop="8dp"
+                    android:text="Hey Tommy, do you remember this place? This was so random trip, but we had a great time. "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Video -->
+
+            <!-- Audio Playback -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="24dp"
+                    android:text="To you Tommy (Audio)"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- res/layout/activity_image_within_image.xml -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Outer Image (Background) -->
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_4" />
+
+                    <Button
+                        android:id="@+id/playpause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="onPlayPauseButtonClick"
+                        android:text="Play" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- Music Player with Album Image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="24dp"
+                    android:text="Omg, my all time favourite song"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Outer Image (Background) -->
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_5" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#616161"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="#000000"
+                    android:textSize="1sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

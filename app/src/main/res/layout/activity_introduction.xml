@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IntroductionActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src = "@drawable/introductionpage"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/rosario"
+                android:text="What Samsara is about ?"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/ruluko"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Welcome to Samsara, the extraordinary mobile application that empowers you to craft your very own legacy. Take a moment to unwind and reflect, as we have an abundance of possibilities awaiting you. Whether it's your achievements, core values, cherished moments, or anything else that defines you, every individual possesses a distinctive narrative to share and a potential imprint to leave behind.  &#10; &#10;Through Samsara, you can authentically express yourself for the world, your dear ones, or even a special someone. Unfold your stories, treasured memories, and heartfelt messages, allowing them to be cherished and commemorated just as you envisioned. Prepare to make a lasting impact and be remembered in a profoundly personal and meaningful manner. Join us on this transformative journey to create the legacy you desire, leaving behind a legacy that will be cherished for generations to come."
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="16dp"
+                android:text="Next"
+                 />
+
+
+
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

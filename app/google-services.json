@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "675946272349",
+    "project_id": "samsara-16ebb",
+    "storage_bucket": "samsara-16ebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675946272349:android:7cac784d2aa9d39428dfb4",
+        "android_client_info": {
+          "package_name": "com.example.samsara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675946272349-q8s64aum9hd3k4n9p3uv3u51tfi4bs02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samsara",
+            "certificate_hash": "c2d513c00e365e5fd2d7a2e53ff3b6e5411bd6ca"
+          }
+        },
+        {
+          "client_id": "675946272349-df4e3jjvmdlqbvvt7usb89cjcjmri0fd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvEWmH5LpLa0nELJ7d9BCKKrhNw5EwYNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675946272349-df4e3jjvmdlqbvvt7usb89cjcjmri0fd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

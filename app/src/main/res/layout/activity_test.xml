@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleProfile">
+
+    <!-- res/layout/activity_profile.xml -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBFB"
+        android:fillViewport="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#7FD1D1"
+                android:fontFamily="serif"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Witness Jennifer's heartfelt creation for her beloved family "
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Profile Photo -->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/sampleprofile1pic" />
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jennifer Dawson"
+                android:textColor="#050505"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <!-- Quote -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="“I am a person who live in the present, cherish the past, and embrace the unknown future throughout my life.”"
+                android:textColor="#434343"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <!-- Picture -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Picture -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_1" />
+
+                <!-- Text below the picture -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left|center_vertical"
+                    android:paddingTop="8dp"
+                    android:text="This is where i lived most of life. We bought this house in 1990, and very few has changed. Tommy and Harry grew up here, do you guys still remember out friday Barbique nights?? what a fun it was, i still remember those times"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Video -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add a VideoView or other video player here -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="8dp"
+                    android:text="My second favourite place in the world, i have been there 4 times!! Place - Italy Sardinia"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </LinearLayout>
+
+            <!-- Audio Playback -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="24dp"
+                    android:text="To my loved ones (Audio)"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- res/layout/activity_image_within_image.xml -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Outer Image (Background) -->
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_4" />
+
+                    <Button
+                        android:id="@+id/playpause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="onPlayPauseButtonClick"
+                        android:text="Play" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="24dp"
+                    android:text="Harry saying “A big deer with hands on head” story (Audio)"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- res/layout/activity_image_within_image.xml -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Outer Image (Background) -->
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sampleprofile1pic" />
+
+                    <Button
+                        android:id="@+id/playpauseSecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="onPlayPauseButtonClickSecond"
+                        android:text="Play" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- Music Player with Album Image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="24dp"
+                    android:text="Omg, my all time favourite song"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Outer Image (Background) -->
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_5" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <!-- Add an Audio player view here -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#616161"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="#000000"
+                    android:textSize="1sp" />
+
+                <Button
+                    android:id="@+id/createYourProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onPlayPauseButtonClickSecond"
+                    android:text="Create your profile" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

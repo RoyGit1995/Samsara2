@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SecondIntroduction"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src = "@drawable/img"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/rosario"
+                android:text="Do you wish to make a profile ?"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/ruluko"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="&#10;
+Craft a timeless digital profile that will stand the test of time. &#10;Take your time to curate what you wish to share.&#10;Select your intended audience carefully. Whether it's for the entire world to see, your beloved ones, or just a particular individual, it's your choice to make. "
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/rosario"
+                android:text="Do you wish to see a profile?"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="340dp"
+                android:fontFamily="@font/ruluko"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="&#10;Go through digitally preserved memories that is shared by your loved one that might help you to remember or reminisce meaningfully. &#10;Know about the person through this profile in a way the person want to be remembered. &#10;Link your physical memories to various options, providing a unique opportunity for everlasting connections. "
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="16dp"
+                android:text="Next"
+                />
+
+
+
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>
